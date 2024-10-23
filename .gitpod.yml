@@ -1,7 +1,9 @@
 # Ports to expose
 tasks:
   - init: |
-    command: ./dev.sh
+      nvm install 22
+      nvm use 22
+      command: ./dev.sh
     openMode: split-right
 
 ports:
