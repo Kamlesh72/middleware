@@ -620,6 +620,23 @@ export type TeamIncidentSettingsResponse = {
   setting: IncidentSettings;
 };
 
+export type IncidentPRsSettings = {
+  include_revert_prs: boolean;
+  title_filters: string[];
+  head_branch_filters: string[];
+};
+
+export type TeamIncidentPRsSettingApiResponse = {
+  created_at: Date;
+  updated_at: Date;
+  team_id: ID;
+  setting: IncidentPRsSettings;
+};
+
+export type TeamIncidentPRsSettingsResponse = {
+  setting: IncidentPRsSettings;
+};
+
 export enum TeamSettings {
   TEAM_MEMBER_METRICS_FILTER_SETTING = 'TEAM_MEMBER_METRICS_FILTER_SETTING',
   EXCLUDED_TICKET_TYPES_SETTING = 'EXCLUDED_TICKET_TYPES_SETTING'
