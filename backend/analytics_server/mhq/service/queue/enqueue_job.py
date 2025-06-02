@@ -1,0 +1,3 @@
+from mhq.service.queue.procrastinate_webhook_queue import ProcrastinateWebhookQueueService
+
+ProcrastinateWebhookQueueService.enqueue_webhook.defer()

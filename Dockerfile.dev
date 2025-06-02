@@ -57,6 +57,8 @@ RUN mkdir -p /var/log/sync_server
 RUN touch /var/log/sync_server/sync_server.log
 RUN mkdir -p /var/log/web-server
 RUN touch /var/log/web-server/web-server.log
+RUN mkdir -p /var/log/procrastinate
+RUN touch /var/log/procrastinate/worker.log
 RUN mkdir -p /var/log/cron
 RUN touch /var/log/cron/cron.log
 RUN chmod 0644 /etc/cron.d/cronjob
